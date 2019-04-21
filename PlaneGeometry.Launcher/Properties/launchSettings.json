@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PlaneGeometry.Launcher": {
+      "commandName": "Project",
+      "commandLineArgs": "1.04 2.39 1.523"
+    }
+  }
+}
