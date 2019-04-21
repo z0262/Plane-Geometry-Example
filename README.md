@@ -25,11 +25,11 @@ bool isRightTriangle = new Triangle(0.51, 1.1, 0.9).IsRightTriangle;
 
 string ellipseName = new Ellipse(1.1, 1.1).FigureName;
 
-var figures = new FigureFactory().CreatePlaneFigures(new[]{ 1.0 })?.ToArray();
+IEnumerable<IPlaneFigure> figures = new FigureFactory().CreatePlaneFigures(new[]{ 1.0 });
 
-var circle = new FigureFactory().CreatePlaneFigure<Circle>(new[]{ 1.0 });
+Circle circle = new FigureFactory().CreatePlaneFigure<Circle>(new[]{ 1.0 });
 
-var triangle = new FigureFactory().CreatePlaneFigure(new[]{ 1.0, 1.0, 0.5 });
+IPlaneFigure triangle = new FigureFactory().CreatePlaneFigure(new[]{ 1.0, 1.0, 0.5 });
 ```
 
 Примечания:
